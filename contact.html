@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Kevin Buya | Get in Touch</title>
+  <meta name="description" content="Get in touch with Kevin Buya for video production, photography, acting, or creative direction work in Cape Town.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>KB</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="loader" id="loader" aria-hidden="true"><div class="loader__inner"><span class="loader__text">KB</span></div></div>
+
+  <header class="nav" id="nav" role="banner">
+    <a href="index.html" class="nav__logo"><span class="nav__logo-text">Kevin<br>Buya</span></a>
+    <nav class="nav__links" role="navigation" aria-label="Main navigation">
+      <a href="index.html" class="nav__link">Home</a>
+      <a href="work.html" class="nav__link">Work</a>
+      <a href="portfolio.html" class="nav__link">Portfolio</a>
+      <a href="services.html" class="nav__link">Services</a>
+      <a href="contact.html" class="nav__link nav__link--cta nav__link--active">Let's Talk</a>
+    </nav>
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span class="nav__toggle-bar"></span><span class="nav__toggle-bar"></span>
+    </button>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Mobile navigation">
+    <nav class="mobile-menu__nav">
+      <a href="index.html" class="mobile-menu__link" data-index="01">Home</a>
+      <a href="work.html" class="mobile-menu__link" data-index="02">Work</a>
+      <a href="portfolio.html" class="mobile-menu__link" data-index="03">Portfolio</a>
+      <a href="services.html" class="mobile-menu__link" data-index="04">Services</a>
+      <a href="contact.html" class="mobile-menu__link" data-index="05">Contact</a>
+    </nav>
+    <div class="mobile-menu__footer">
+      <a href="mailto:misfitculturesa@gmail.com" class="mobile-menu__contact">misfitculturesa@gmail.com</a>
+    </div>
+  </div>
+
+  <main>
+    <section class="contact-page">
+      <div class="contact-page__inner">
+        <div class="contact-page__header reveal">
+          <span class="page-hero__label">Contact</span>
+          <h1 class="page-hero__title" style="font-size: var(--fs-h2);">Let's Make<br>Something Together</h1>
+          <p class="page-hero__sub">Got a project in mind? Need a creative who can actually deliver? I'm one message away.</p>
+        </div>
+
+        <div class="contact__layout">
+          <div class="contact__info reveal">
+            <div class="contact__block">
+              <span class="contact__label">Email</span>
+              <a href="mailto:misfitculturesa@gmail.com" class="contact__value">misfitculturesa@gmail.com</a>
+            </div>
+            <div class="contact__block">
+              <span class="contact__label">Phone / WhatsApp</span>
+              <a href="https://wa.me/27744455671" target="_blank" rel="noopener" class="contact__value">074 445 5671</a>
+            </div>
+            <div class="contact__block">
+              <span class="contact__label">Instagram</span>
+              <a href="https://instagram.com/misfitmediax" target="_blank" rel="noopener" class="contact__value">@misfitmediax</a>
+            </div>
+            <div class="contact__block">
+              <span class="contact__label">Based in</span>
+              <span class="contact__value contact__value--static">Cape Town, South Africa</span>
+            </div>
+
+            <div class="contact__quick-links">
+              <h4>Quick links</h4>
+              <a href="work.html">View my work &rarr;</a>
+              <a href="services.html">See what I offer &rarr;</a>
+              <a href="portfolio.html">Photography portfolio &rarr;</a>
+            </div>
+          </div>
+
+          <form class="contact__form reveal" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name" class="form-label">Your name</label>
+              <input type="text" id="name" name="name" class="form-input" required autocomplete="name">
+            </div>
+            <div class="form-group">
+              <label for="email" class="form-label">Email address</label>
+              <input type="email" id="email" name="email" class="form-input" required autocomplete="email">
+            </div>
+            <div class="form-group">
+              <label for="phone" class="form-label">Phone number (optional)</label>
+              <input type="tel" id="phone" name="phone" class="form-input" autocomplete="tel">
+            </div>
+            <div class="form-group">
+              <label for="project" class="form-label">What do you need?</label>
+              <select id="project" name="project" class="form-input form-select">
+                <option value="" disabled selected>Select a service</option>
+                <option value="video">Video Production</option>
+                <option value="photography">Photography</option>
+                <option value="talent">On-Camera Talent</option>
+                <option value="creative-direction">Creative Direction</option>
+                <option value="graphic-design">Graphic Design</option>
+                <option value="other">Something else</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message" class="form-label">Tell me about the project</label>
+              <textarea id="message" name="message" class="form-input form-textarea" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">Send Message</button>
+            <p class="form-note">I typically respond within 24 hours.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="footer__inner">
+      <div class="footer__top">
+        <div class="footer__brand"><span class="footer__name">Kevin Buya</span><span class="footer__tagline">Creative Director & Filmmaker</span></div>
+        <div class="footer__links"><a href="index.html">Home</a><a href="work.html">Work</a><a href="portfolio.html">Portfolio</a><a href="services.html">Services</a><a href="contact.html">Contact</a></div>
+        <div class="footer__social">
+          <a href="https://instagram.com/misfitmediax" target="_blank" rel="noopener" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          <a href="mailto:misfitculturesa@gmail.com" aria-label="Email"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a>
+          <a href="https://wa.me/27744455671" target="_blank" rel="noopener" aria-label="WhatsApp"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer__bottom"><span class="footer__copy">&copy; 2024 Kevin Buya. All rights reserved.</span><span class="footer__credit">Cape Town, South Africa</span></div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/27744455671" target="_blank" rel="noopener" class="fab" aria-label="Message on WhatsApp"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+  <script src="main.js" defer></script>
+</body>
+</html>

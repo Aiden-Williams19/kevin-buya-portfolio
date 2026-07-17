@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Work — Kevin Buya | Film, Video & Performance</title>
+  <meta name="description" content="Video production, short films, brand content, acting and presenting work by Kevin Buya. Cape Town-based filmmaker and creative.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>KB</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="loader" id="loader" aria-hidden="true"><div class="loader__inner"><span class="loader__text">KB</span></div></div>
+
+  <header class="nav" id="nav" role="banner">
+    <a href="index.html" class="nav__logo"><span class="nav__logo-text">Kevin<br>Buya</span></a>
+    <nav class="nav__links" role="navigation" aria-label="Main navigation">
+      <a href="index.html" class="nav__link">Home</a>
+      <a href="work.html" class="nav__link nav__link--active">Work</a>
+      <a href="portfolio.html" class="nav__link">Portfolio</a>
+      <a href="services.html" class="nav__link">Services</a>
+      <a href="contact.html" class="nav__link nav__link--cta">Let's Talk</a>
+    </nav>
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span class="nav__toggle-bar"></span><span class="nav__toggle-bar"></span>
+    </button>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Mobile navigation">
+    <nav class="mobile-menu__nav">
+      <a href="index.html" class="mobile-menu__link" data-index="01">Home</a>
+      <a href="work.html" class="mobile-menu__link" data-index="02">Work</a>
+      <a href="portfolio.html" class="mobile-menu__link" data-index="03">Portfolio</a>
+      <a href="services.html" class="mobile-menu__link" data-index="04">Services</a>
+      <a href="contact.html" class="mobile-menu__link" data-index="05">Contact</a>
+    </nav>
+    <div class="mobile-menu__footer">
+      <a href="mailto:misfitculturesa@gmail.com" class="mobile-menu__contact">misfitculturesa@gmail.com</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="page-hero__content">
+        <span class="page-hero__label reveal">Selected Work</span>
+        <h1 class="page-hero__title reveal" data-delay="1">Film, Video<br>& Performance</h1>
+        <p class="page-hero__sub reveal" data-delay="2">From Instagram reels to influencer campaigns, short films to national commercials — everything I've worked on, all in one place.</p>
+      </div>
+    </section>
+
+    <!-- Filter -->
+    <div class="work__filters reveal" style="max-width: min(1280px,90vw); margin: 0 auto var(--sp-8); padding: 0 clamp(24px,5vw,64px);">
+      <button class="work__filter active" data-filter="all">All</button>
+      <button class="work__filter" data-filter="film">Film & Video</button>
+      <button class="work__filter" data-filter="commercial">Commercial</button>
+      <button class="work__filter" data-filter="content">Content</button>
+      <button class="work__filter" data-filter="acting">Acting</button>
+      <button class="work__filter" data-filter="presenting">Presenting</button>
+      <button class="work__filter" data-filter="music">Music</button>
+    </div>
+
+    <!-- Video Editing -->
+    <section class="work-section" id="video">
+      <div class="work-section__inner">
+        <h2 class="work-section__title reveal">Video Editing</h2>
+        <p class="work-section__intro reveal">Let me take you through some videos I've worked on — from Instagram reels to influencer campaigns, all here in one place.</p>
+
+        <div class="video-grid">
+          <article class="video-card video-card--featured reveal" data-category="film">
+            <div class="video-card__player">
+              <iframe src="https://drive.google.com/file/d/1Px1_5sCIGdCCqFk1iHmx0U8QvjzXpFzv/preview" allow="autoplay; encrypted-media" allowfullscreen loading="lazy" title="Life Reset"></iframe>
+            </div>
+            <div class="video-card__info">
+              <span class="video-card__tag">Short Film / Direction</span>
+              <h3>Life Reset</h3>
+              <p>A personal short film exploring themes of starting over, shot and edited end-to-end in Cape Town.</p>
+              <span class="video-card__year">2024</span>
+            </div>
+          </article>
+
+          <article class="video-card reveal" data-category="commercial">
+            <div class="video-card__player">
+              <iframe src="https://drive.google.com/file/d/1SmOERoCYPhybz4x8TcalM75baoLjAzK_/preview" allow="autoplay; encrypted-media" allowfullscreen loading="lazy" title="#OwnYourNak Campaign"></iframe>
+            </div>
+            <div class="video-card__info">
+              <span class="video-card__tag">Campaign</span>
+              <h3>#OwnYourNak</h3>
+              <p>Brand campaign content — concept through final delivery.</p>
+            </div>
+          </article>
+
+          <article class="video-card reveal" data-category="content">
+            <div class="video-card__player">
+              <iframe src="https://drive.google.com/file/d/1qAv0C9bW0yKL4-AANd4TlN9Cdx5qL-Na/preview" allow="autoplay; encrypted-media" allowfullscreen loading="lazy" title="Weekend Vlog"></iframe>
+            </div>
+            <div class="video-card__info">
+              <span class="video-card__tag">Vlog / Content</span>
+              <h3>Weekend Vlog — What Does Kevin Do</h3>
+              <p>Behind-the-scenes personal vlog content.</p>
+            </div>
+          </article>
+
+          <article class="video-card reveal" data-category="film">
+            <div class="video-card__player">
+              <iframe src="https://drive.google.com/file/d/1p1z32wHJKZ0W5zuEiIcIJDimNZXgD2gO/preview" allow="autoplay; encrypted-media" allowfullscreen loading="lazy" title="Deborah's Matric Dance"></iframe>
+            </div>
+            <div class="video-card__info">
+              <span class="video-card__tag">Event Film</span>
+              <h3>Deborah's Matric Dance 2024</h3>
+              <p>Matric dance highlight reel — cinematic event coverage.</p>
+            </div>
+          </article>
+
+          <article class="video-card reveal" data-category="content">
+            <div class="video-card__player">
+              <iframe src="https://drive.google.com/file/d/1g8lx3EDz1LwCZCLZqLaQ5MnpQox0wlx9/preview" allow="autoplay; encrypted-media" allowfullscreen loading="lazy" title="Copper Club"></iframe>
+            </div>
+            <div class="video-card__info">
+              <span class="video-card__tag">Instagram Vlog</span>
+              <h3>Copper Club</h3>
+              <p>Instagram vlog series — shooting, editing, and publishing on a fast turnaround.</p>
+            </div>
+          </article>
+
+          <article class="video-card reveal" data-category="film">
+            <div class="video-card__player">
+              <iframe src="https://drive.google.com/file/d/1Yztl6vprQqogOcjCEjh2AEPF2RzxSQ7F/preview" allow="autoplay; encrypted-media" allowfullscreen loading="lazy" title="Grace's Matric Dance"></iframe>
+            </div>
+            <div class="video-card__info">
+              <span class="video-card__tag">Event Film</span>
+              <h3>Grace's Matric Dance 2024</h3>
+              <p>Another matric dance captured with cinematic flair.</p>
+            </div>
+          </article>
+
+          <article class="video-card reveal" data-category="commercial">
+            <div class="video-card__player">
+              <iframe src="https://drive.google.com/file/d/1xyF1GpgW50MGuB2Rk4xbq2x-jFDpAuoX/preview" allow="autoplay; encrypted-media" allowfullscreen loading="lazy" title="Beau et Belle"></iframe>
+            </div>
+            <div class="video-card__info">
+              <span class="video-card__tag">Brand Content</span>
+              <h3>Beau et Belle x Matric Dance Make Up Set</h3>
+              <p>Product-focused brand collaboration video.</p>
+            </div>
+          </article>
+
+          <article class="video-card reveal" data-category="music">
+            <div class="video-card__player">
+              <iframe src="https://drive.google.com/file/d/124jMDZqdBw7B8raekpmSrJ_w064IIoXa/preview" allow="autoplay; encrypted-media" allowfullscreen loading="lazy" title="Energy Music Video BTS"></iframe>
+            </div>
+            <div class="video-card__info">
+              <span class="video-card__tag">Music Video BTS</span>
+              <h3>Energy Music Video — Behind the Scenes</h3>
+              <p>Behind-the-scenes of a music video production.</p>
+            </div>
+          </article>
+
+          <article class="video-card reveal" data-category="content">
+            <div class="video-card__player">
+              <iframe src="https://drive.google.com/file/d/1ehI0OGRnI_Mb5UhvVjGZnPuiSU7UdD38/preview" allow="autoplay; encrypted-media" allowfullscreen loading="lazy" title="GRWM Anime Style"></iframe>
+            </div>
+            <div class="video-card__info">
+              <span class="video-card__tag">Content</span>
+              <h3>GRWM — Anime Style</h3>
+              <p>Get ready with me content with a creative anime-inspired edit.</p>
+            </div>
+          </article>
+
+          <article class="video-card reveal" data-category="film">
+            <div class="video-card__player">
+              <iframe src="https://drive.google.com/file/d/1iLmOZOeWPAd5usPX6CQ9SFutzHzfonrQ/preview" allow="autoplay; encrypted-media" allowfullscreen loading="lazy" title="Adrian's 40th Birthday"></iframe>
+            </div>
+            <div class="video-card__info">
+              <span class="video-card__tag">Event Film</span>
+              <h3>Adrian's 40th Birthday Wish Compilation</h3>
+              <p>Heartfelt birthday wish compilation video.</p>
+            </div>
+          </article>
+
+          <article class="video-card reveal" data-category="film">
+            <div class="video-card__player">
+              <iframe src="https://drive.google.com/file/d/1AJRGn4y__CXwFpwxK0kmfVtX1f0NrrpX/preview" allow="autoplay; encrypted-media" allowfullscreen loading="lazy" title="Street Shoot Highlight Reel"></iframe>
+            </div>
+            <div class="video-card__info">
+              <span class="video-card__tag">Highlight Reel</span>
+              <h3>Street Shoot Highlight Reel</h3>
+              <p>Fast-paced highlight reel from a street photography shoot.</p>
+            </div>
+          </article>
+
+          <article class="video-card reveal" data-category="film">
+            <div class="video-card__player">
+              <iframe src="https://drive.google.com/file/d/1nSOHbcgIpXdcU0TuSHFdPdDtrUzs1KSh/preview" allow="autoplay; encrypted-media" allowfullscreen loading="lazy" title="2023 Highlight Reel"></iframe>
+            </div>
+            <div class="video-card__info">
+              <span class="video-card__tag">Showreel</span>
+              <h3>2023 Highlight Reel</h3>
+              <p>Year-end compilation showcasing the best moments of 2023.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Acting -->
+    <section class="work-section work-section--alt" id="acting">
+      <div class="work-section__inner">
+        <h2 class="work-section__title reveal">Acting</h2>
+        <p class="work-section__intro reveal">I love being behind the camera, but sometimes the best way to truly show my craft is when the camera is pointed at me.</p>
+
+        <div class="video-grid video-grid--trio">
+          <article class="video-card reveal" data-category="acting">
+            <div class="video-card__player">
+              <iframe src="https://drive.google.com/file/d/1wmSAGE4EZR-CfPQAEJf-aKkQsEjWuCH2/preview" allow="autoplay; encrypted-media" allowfullscreen loading="lazy" title="OneDayOnly Commercial"></iframe>
+            </div>
+            <div class="video-card__info">
+              <span class="video-card__tag">Commercial</span>
+              <h3>OneDayOnly Commercial</h3>
+              <p>National commercial for one of South Africa's leading e-commerce brands.</p>
+              <span class="video-card__year">2023</span>
+            </div>
+          </article>
+
+          <article class="video-card reveal" data-category="acting">
+            <div class="video-card__player">
+              <iframe src="https://drive.google.com/file/d/1jIyazX7YeHScbfWzpC49IttcFyEx_cfs/preview" allow="autoplay; encrypted-media" allowfullscreen loading="lazy" title="Being Lied To"></iframe>
+            </div>
+            <div class="video-card__info">
+              <span class="video-card__tag">Short Film</span>
+              <h3>Being Lied To</h3>
+              <p>A short film exploring deception and trust — an early but defining performance piece.</p>
+              <span class="video-card__year">2019</span>
+            </div>
+          </article>
+
+          <article class="video-card reveal" data-category="acting">
+            <div class="video-card__player">
+              <iframe src="https://drive.google.com/file/d/1KxBur6foxUSjV-u-N4_tmD1zHdq-sH5T/preview" allow="autoplay; encrypted-media" allowfullscreen loading="lazy" title="Grow Up"></iframe>
+            </div>
+            <div class="video-card__info">
+              <span class="video-card__tag">Short Film</span>
+              <h3>Grow Up</h3>
+              <p>Performance-driven storytelling with raw, honest direction.</p>
+              <span class="video-card__year">2024</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Presenting -->
+    <section class="work-section" id="presenting">
+      <div class="work-section__inner">
+        <h2 class="work-section__title reveal">Presenting</h2>
+        <p class="work-section__intro reveal">I find it really natural to effectively guide an audience through a program or between segments of a show.</p>
+
+        <div class="video-grid video-grid--duo">
+          <article class="video-card reveal" data-category="presenting">
+            <div class="video-card__player">
+              <iframe src="https://drive.google.com/file/d/1csFocIeDpUp873gp76g1-wJmdkb2spd2/preview" allow="autoplay; encrypted-media" allowfullscreen loading="lazy" title="Almost Church"></iframe>
+            </div>
+            <div class="video-card__info">
+              <span class="video-card__tag">Co-Hosting</span>
+              <h3>Almost Church</h3>
+              <p>Co-hosting duties — bringing energy, authenticity and presence to a live format.</p>
+            </div>
+          </article>
+
+          <article class="video-card reveal" data-category="presenting">
+            <div class="video-card__player">
+              <iframe src="https://drive.google.com/file/d/1_vqDy-YOTBRnHMvEyuCZsPyyXwtlBGWd/preview" allow="autoplay; encrypted-media" allowfullscreen loading="lazy" title="Joshgen Live"></iframe>
+            </div>
+            <div class="video-card__info">
+              <span class="video-card__tag">Live Co-Hosting</span>
+              <h3>Joshgen Live</h3>
+              <p>Live co-hosting — thinking on feet, reading the room, keeping it real.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Music Performance -->
+    <section class="work-section work-section--alt" id="music">
+      <div class="work-section__inner">
+        <h2 class="work-section__title reveal">Music Performance</h2>
+
+        <div class="video-grid video-grid--duo">
+          <article class="video-card reveal" data-category="music">
+            <div class="video-card__player">
+              <iframe src="https://drive.google.com/file/d/1RoGhwQs-YtjM5g735GGbJWUh3e0EsZs8/preview" allow="autoplay; encrypted-media" allowfullscreen loading="lazy" title="Music Performance 1"></iframe>
+            </div>
+            <div class="video-card__info">
+              <span class="video-card__tag">Performance</span>
+              <h3>Live Performance</h3>
+            </div>
+          </article>
+
+          <article class="video-card reveal" data-category="music">
+            <div class="video-card__player">
+              <iframe src="https://drive.google.com/file/d/1DPdZQwAcIC073GfaDIWtVBIwO9gMo0K4/preview" allow="autoplay; encrypted-media" allowfullscreen loading="lazy" title="Music Performance 2"></iframe>
+            </div>
+            <div class="video-card__info">
+              <span class="video-card__tag">Performance</span>
+              <h3>Music Session</h3>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-band">
+      <div class="cta-band__inner reveal">
+        <h2 class="cta-band__title">Like what you see?</h2>
+        <p class="cta-band__text">Let's create something together. I'm available for video production, on-camera work, and creative direction.</p>
+        <div class="cta-band__actions">
+          <a href="contact.html" class="btn btn--primary">Get in touch</a>
+          <a href="services.html" class="btn btn--ghost">View services</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="footer__inner">
+      <div class="footer__top">
+        <div class="footer__brand"><span class="footer__name">Kevin Buya</span><span class="footer__tagline">Creative Director & Filmmaker</span></div>
+        <div class="footer__links">
+          <a href="index.html">Home</a><a href="work.html">Work</a><a href="portfolio.html">Portfolio</a><a href="services.html">Services</a><a href="contact.html">Contact</a>
+        </div>
+        <div class="footer__social">
+          <a href="https://instagram.com/misfitmediax" target="_blank" rel="noopener" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          <a href="mailto:misfitculturesa@gmail.com" aria-label="Email"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a>
+          <a href="https://wa.me/27744455671" target="_blank" rel="noopener" aria-label="WhatsApp"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer__bottom"><span class="footer__copy">&copy; 2024 Kevin Buya. All rights reserved.</span><span class="footer__credit">Cape Town, South Africa</span></div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/27744455671" target="_blank" rel="noopener" class="fab" aria-label="Message on WhatsApp"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+  <script src="main.js" defer></script>
+</body>
+</html>
