@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found — Kevin Buya</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .error-page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+    }
+    .error-page__code {
+      font-family: var(--f-display);
+      font-size: clamp(4rem, 12vw, 8rem);
+      color: var(--c-border);
+      line-height: 1;
+      margin-bottom: 1rem;
+    }
+    .error-page__title {
+      font-family: var(--f-display);
+      font-size: var(--fs-h3);
+      color: var(--c-white);
+      margin-bottom: 1rem;
+    }
+    .error-page__text {
+      color: var(--c-text-muted);
+      margin-bottom: 2rem;
+      max-width: 400px;
+    }
+  </style>
+</head>
+<body>
+  <div class="error-page">
+    <div class="error-page__code">404</div>
+    <h1 class="error-page__title">Nothing here</h1>
+    <p class="error-page__text">The page you're looking for doesn't exist. It might have been moved or you might have typed the URL wrong.</p>
+    <a href="/" class="btn btn--primary">Back to home</a>
+  </div>
+</body>
+</html>
